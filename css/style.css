@@ -1,0 +1,294 @@
+body {
+    background-color: #f8f8f8;
+}
+.encabezado {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    line-height: 2.4rem;
+}
+.encabezado span {
+    font-size: 3.8rem;
+    font-family: 'Italianno', cursive;
+    color: #e082a8;
+}
+
+
+.encabezado-sitio img{
+    width: 250px;
+}
+
+.sociales ul{
+    list-style:none;
+    margin :0;
+    padding: 0;
+}
+
+.sociales ul li{
+    position: relative;
+    display: inline-block;
+}
+
+.sociales ul li a::before{
+    font-family: 'FontAwesome';
+    display:inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialised;
+    font-size: 2rem;
+    color : #e082a8; 
+}
+
+.sociales ul li a[href*="www.facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="www.instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="www.youtube.com"]::before{
+    content: '\f16a';
+}
+.sociales ul li a[href*="http:/wa.me/529341127236"]::before{
+    content: '\f232';
+}
+
+/**Carousel**/
+.carousel-caption h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+.nuevo-sitio p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    color: #c5c1c1;
+}
+
+ /**Navegacion**/
+ .navegacion{
+     background-color:#8ed3cc; 
+ }
+ .navbar-light .navbar-toggler{
+     background-color: #ffffff;
+ }
+ .navbar-light .navbar-brand{
+     color: #ffffff;
+ }
+ .nav-principal{
+    background-image: url(../img/border_horizontal.png),
+                  url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+.nav-link{
+    color: #ffffff;
+    font-size: 1.4rem;
+    transition: all .5s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-link:hover{
+    background-color: #bde8dd;
+    color: #e082a8;  
+}
+
+/**Servicios**/
+.imagen-servicio img{
+    border: 6px solid #ffffff;
+    -webkit-transition: transform .3s ease; 
+    -ms-transition: transform .3s ease; 
+    transition: transform .3s ease; 
+}
+.imagen-servicio img:hover{
+    -webkit-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+}
+.servicio-info{
+    background-color: #ffffff;
+    font-family: 'Italianno', cursive;
+    margin-top: -5rem; 
+}
+.servicio-info .btn-primary{
+    border-radius: 0px;
+    background-color: #e082a8;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+}
+
+/**HORARIOS**/
+.horario{
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+.horario h2{
+    font-size: 2.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.horario table{
+    border: 2px solid #e082a8;
+}
+.horario thead{
+    background-color: #e082a8;
+}
+.horario .table td,
+.horario .table thead th{
+    border: none;
+}
+.horario .table tbody tr td{
+    padding: .35rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.bg-horario{
+    background-image: url(../img/Postres.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/**Productos**/
+.productos .card{
+    border: none;
+}
+.productos .card h3{
+    color: #e082a8;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+.productos .card a{
+    color: #000000;
+}
+.productos .card a:hover{
+    text-decoration: none;
+}
+.productos .card p{
+    font-size: .8rem;
+}
+.productos .card .precio{
+    font-size: 1.6rem;
+    color: #969696;
+}
+.productos .card img:hover{
+    transform: scale(1.1);
+    transition: .3s ease;    
+}
+.productos .card .card-body:hover{
+    background-color: #8ed3cc;
+}
+
+/**Citas**/
+.citas{
+    background-image: url(../img/citas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+@media (min-width: 992px){
+    .citas{
+        background-size: cover;
+    }
+}
+.citas h3{
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.citas p{
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+.citas .btn-outline-info{     
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;   
+    border-color: #e082a8;
+    color: #ffffff;     
+}
+.citas .btn-outline-info:hover{
+    color:#ffffff;
+    background-color: #e082a8;
+}
+/**Footer**/
+.copyright{
+    color: #979797;
+    font-size: .8rem;
+}
+/**Hero**/
+.hero{
+    position: relative;
+}
+.hero h2{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #8ed3cc;
+    font-family: 'Raleway', sans-serif;   
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+/**Aside**/
+aside{
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+
+/**Servicios**/
+#servicios .card-header{
+    background-color: #e082a8;
+    padding: 0 1.25rem;
+
+}
+#servicios .card-header button{
+    border: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;  
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/**Cupon**/
+.cupon{
+    border: 3px dashed #ffffff;
+}
+.cupon .lead{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 576px){
+.card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+}
+}
+
+@media (min-width: 992px){
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;  
+    }
+}
+
+.formulario-contacto .btn-outline-info{
+    border-radius: 0;
+    border-color: #a0c7bd;
+    font-family: 'Raleway', sans-serif;  
+}
+.formulario-contacto .btn-outline-info:hover{
+    background-color: #a0c7bd;
+    color: #ffffff;
+}
+
+.formulario-contacto{
+    border: 2px solid #969696;
+    background-color: #ffffff;
+    }
