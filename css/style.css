@@ -1,3 +1,4 @@
+
 body {
     background-color: #f8f8f8;
 }
@@ -15,7 +16,8 @@ body {
 
 
 .encabezado-sitio img{
-    width: 250px;
+    width: 180px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .sociales ul{
