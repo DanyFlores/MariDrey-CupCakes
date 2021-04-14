@@ -24,6 +24,7 @@ body {
     list-style:none;
     margin :0;
     padding: 0;
+    text-align: end;
 }
 
 .sociales ul li{
@@ -51,7 +52,7 @@ body {
 .sociales ul li a[href*="www.youtube.com"]::before{
     content: '\f16a';
 }
-.sociales ul li a[href*="http:/wa.me/529341127236"]::before{
+.sociales ul li a[href*="https://wa.me/message/ZANCF2X3NSN5D1"]::before{
     content: '\f232';
 }
 
@@ -294,3 +295,27 @@ aside{
     border: 2px solid #969696;
     background-color: #ffffff;
     }
+/* Wahtsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
